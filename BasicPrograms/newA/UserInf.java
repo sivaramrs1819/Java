@@ -71,7 +71,10 @@ public class UserInf {
     }
 
     public void LastTransaction(){
-        System.out.println("\nLast Transaction : $" + getLastTransaction() + " has been " + TransactionType);
+        if (TransactionType!=null) {
+            System.out.println("\nLast Transaction : $" + getLastTransaction() + " has been " + TransactionType);
+        }else
+            System.out.println("\nNo Transactions has been made yet");
     }
 
     public int getAmount() {
