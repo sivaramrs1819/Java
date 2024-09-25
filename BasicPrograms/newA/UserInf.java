@@ -22,7 +22,7 @@ public class UserInf {
 
 
     public String getAccount_NO() {
-        return Account_NO.substring(8, 12);
+        return Account_NO.substring(Account_NO.length() - 4);
     }
 
   
